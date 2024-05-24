@@ -161,8 +161,9 @@ Textbook created successfully. Here are the next steps:
 
 1. cd into %s and run "pnpm install"
 2. Make necessary changes to .env. You will likely need to create a new supabase instance and set the DATABASE_URL environmental variable.
-3. Edit content/home.mdx to update the homepage text
-4. Run "pnpm dev" to start the dev server
+3. If the database is new, run "pnpm drizzle-kit push" to initialize the tables
+4. Edit content/home.mdx to update the homepage text
+5. Run "pnpm dev" to start the dev server
 
 `, dst)
 		return nil
